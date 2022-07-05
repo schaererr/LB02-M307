@@ -45,7 +45,7 @@ function validateUser(userObj) {
     result = validateLib.checkLength("password", userObj.password, 8);
     if (result.isNotValid) {return result;}
 
-    result = validateLib.checkPassword("password", userObj.password, 8);
+    result = validateLib.checkPassword("password", userObj.password);
     if (result.isNotValid) {return result;}
 
 

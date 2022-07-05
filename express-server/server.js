@@ -76,24 +76,6 @@ let post = app.post('/register', (req, res) => {
 });
 
 
-/*
-{
-    "user": {
-    "firstname": "",
-    "lastname": "",
-    "date": "",
-    "option1": "",
-    "option2": "",
-    "option3": "",
-    "email": "",
-    "number": "",
-    "password": "",
-    "passwordcheck": ""
-    }
-}
-*/
-
-
 
 
 

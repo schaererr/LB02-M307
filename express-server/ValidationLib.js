@@ -8,38 +8,6 @@ function showSuccess(id) {
     return `${id} successfully validated!`;
 }
 
-/*
-// Show Radio Error
-function showErrorRadio(id, message) {
-    const radioControl = input.parentElement.closest('.form-control');
-    radioControl.className = 'form-control error';
-    const small = radioControl.querySelector('small');
-    small.innerText = message;
-}
-
-// Radio Success
-function showSuccessRadio(id) {
-    const radioControl = input.parentElement.closest('.form-control');
-    radioControl.className = 'form-control success';
-}
-*/
-
-
-// Check Email
-function checkEmail(id,input) {
-    let result = {
-        isNotValid: false,
-        msg: showSuccess(id)
-    }
-    const emailValidation = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    if (!emailValidation.test(input.trim())) {
-        result = {
-            isNotValid: true,
-            msg: showError(id, 'Email is not valid')
-        }
-    }
-    return result;
-}
 
 // Check Date
 function checkDate(id, input) {
@@ -56,19 +24,6 @@ function checkDate(id, input) {
         }
     }
     return result;
-}
-
-// Check Radio Buttons
-function checkRadioButtons(input) {
-    if (document.getElementById('option-1').checked) {
-        showSuccessRadio(input)
-    } else if (document.getElementById('option-2').checked) {
-        showSuccessRadio(input)
-    } else if (document.getElementById('option-3').checked) {
-        showSuccessRadio(input)
-    } else {
-        showErrorRadio(input, 'Please Select an Account Type')
-    }
 }
 
 // Check Email
