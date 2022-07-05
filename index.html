@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Signup Form</title>
+  </head>
+  <body>
+    <div class="form-container">
+      <form id="form" class="form">
+        <h2>MAKE AN ACCOUNT</h2>
+
+        <div class="name-container">
+          <div class="form-control">
+            <label for="firstname">Firstname</label>
+            <input type="text" id="firstname" placeholder="Enter Firstname" />
+            <small>Error message</small>
+          </div>
+          <div class="form-control">
+            <label for="lastname">Lastname</label>
+            <input type="text" id="lastname" placeholder="Enter Lastname" />
+            <small>Error message</small>
+          </div>
+        </div>
+        <div class="form-control">
+          <label for="date">Birth Date</label>
+          <input type="date" id="date">
+          <small>Error Message</small>
+        </div>
+
+        <!-- Grundlagerüst HTML/CSS Radiobuttons = https://codepen.io/Metty/pen/MWjOavR -->
+        <div class="form-control">
+          <label>Account Type</label>
+          <div class="wrapper">
+            <input type="radio" name="radio" id="option-1">
+            <input type="radio" name="radio" id="option-2">
+            <input type="radio" name="radio" id="option-3">
+            <label for="option-1" class="option option-1">
+              <span>Student</span>
+            </label>
+            <label for="option-2" class="option option-2">
+               <span>Teacher</span>
+            </label>
+            <label for="option-3" class="option option-3">
+              <span>Individual</span>
+            </label>
+         </div>
+         <small class="radio-small">Error message</small>
+        </div>
+      
+        <div class="form-control">
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="Enter email" />
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="number">Number</label>
+          <input type="number" id="number" placeholder="Enter Phone Number" />
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter Password" />
+            <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="passwordcheck">Confirm Password</label>
+          <input type="password" id="passwordcheck" placeholder="Confirm Passoword" />
+          <small>Error message</small>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <script src="./script/validation.js"></script>
+  </body>
+</html>

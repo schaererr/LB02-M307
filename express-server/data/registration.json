@@ -1,0 +1,15 @@
+[
+  {
+    "id": "43101a2d-0dd8-487c-9f30-bfde705c1e76",
+    "firstname": "Ramon",
+    "lastname": "Schärer",
+    "date": "10-15-2004",
+    "option1": ".",
+    "option2": "",
+    "option3": "",
+    "email": "schaererr@bzz.ch",
+    "number": "0761231122",
+    "password": "Passwort1!",
+    "passwordcheck": "Passwort1!"
+  }
+]
